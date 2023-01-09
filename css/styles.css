@@ -1,0 +1,296 @@
+/*
+Color Palette Definition Codes
+------------------------------
+#000000 - Black
+#006eff - Lighter than Dark Blue
+#0A253B - Professional Looking Dark Blue 
+#ECECEC - Whiteish Grey
+#101010 - Dark Grey
+#1a1a1a - Lighter Dark Grey
+*/
+
+/* Global Styles */
+/* -------------------------------------------------------- */
+
+/* --- box model fix start --- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*after {
+  box-sizing: inherit;
+}
+/* --- box model fix end --- */
+
+body {
+  color: #000000; /* font color */
+  margin: 0; /* removes space between sections and edge of browser  */
+  padding: 0; /* convention */
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+img {
+  width: 300px;
+}
+
+a {
+  color: blue; /* sets link color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #006eff; /* hovering over links changes their color */
+}
+h1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 100px;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 40px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 0;
+}
+
+h5 {
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+
+.content-wrap {
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/* Navigation Bar Styles */
+/* -------------------------------------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #101010;
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+
+.brand-name {
+  padding: 1rem;
+  border-right: solid #1a1a1a 1px;
+}
+
+.brand-name a {
+  color: white;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 25px;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  margin-top: 0.3rem;
+  padding: 1.3rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color: #c07c23;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 23px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Header Styles */
+/* -------------------------------------------------------- */
+header {
+  color: white;
+  background-position: 50% 35%;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url(../images/BewitchedGraciousCowbird-size_restricted.gif);
+}
+
+/* Projects Styles */
+/* -------------------------------------------------------- */
+.projects {
+  background: #ececec;
+}
+
+.project-item {
+  overflow: hidden;
+  border-bottom: 1px dashed #101010;
+  padding: 25px 0;
+}
+
+.project-item a {
+  color: #ececec;
+  background: #0a253b;
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.project-item a:hover {
+  background: rgba(10, 37, 59, 80%);
+}
+
+/* Education Styles */
+/* -------------------------------------------------------- */
+.education {
+  background-image: url(../images/McMasterbg.png);
+  background-size: cover;
+  color: white;
+}
+
+/* Contact Information Styles */
+/* -------------------------------------------------------- */
+footer {
+  background: #101010;
+  color: white;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list a {
+  color: white;
+  padding: 15px;
+  display: inline-block;
+}
+
+.contact-list a:hover {
+  color: #c07c23;
+}
+
+/* Responsive Styles */
+/* -------------------------------------------------------- */
+
+@media screen and (min-width: 1200px) {
+  header,
+  footer {
+    text-align: center;
+  }
+
+  .project-item img {
+    float: left;
+    margin-right: 30px;
+    width: 380px;
+  }
+
+  .education-item img {
+    float: left;
+    margin-right: 30px;
+    width: 380px;
+  }
+
+  .job-item img {
+    float: left;
+    margin-right: 30px;
+    width: 380px;
+  }
+
+  .job-item {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 20px;
+  }
+
+  .education-item {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 20px;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links li {
+    text-align: center;
+    border-top: solid #1a1a1a 1px;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  h1 {
+    margin-top: 60px;
+    font-size: 65px;
+    padding-bottom: 10px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
