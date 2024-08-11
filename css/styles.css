@@ -110,6 +110,7 @@ h5 {
 
 .navbar-links li {
   list-style: none;
+  position: relative;
 }
 
 .navbar-links li a {
@@ -121,9 +122,33 @@ h5 {
   display: block;
 }
 
-.navbar-links li:hover {
-  background-color: #c07c23;
+/* Dropdown Menu */
+
+ul li ul.dropdown li {
+  display: block;
 }
+
+ul li ul.dropdown {
+  width: 100%;
+  background: #101010;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li a:hover {
+  background: #c07c23;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+
+ul li ul.dropdown li:hover a {
+  background-color: #c07c23;
+} */
+
 
 .toggle-button {
   position: absolute;
