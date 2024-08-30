@@ -38,13 +38,13 @@
             <li>
               <a href="#">More ▾</a>
               <ul class="dropdown">
-                <li><a href="#">Dark</a></li>
-                <li><a href="#">Light</a></li>
+                <li><a href="#" id = "icon">Dark ☽</a></li>
               </ul>
             </li> <!-- Closing the "More" <li> tag -->
           </ul>
         </div>
       </nav>
+
 
       <!-- About Me -->
       <header id="home">
@@ -141,12 +141,6 @@
         </div>
       </section>
 
-          <!-- Feature -->
-          <section class="light/darkmode">
-            <button id="light-mode-btn">Light Mode</button>
-            <button id="dark-mode-btn">Dark Mode</button>
-          </section>
-      
 
       <!-- Education & Certifications -->
       <section class="education" id="education">
@@ -199,6 +193,23 @@
         </div>
       </footer>
     </main>
+
+    <script>
+      var icon = document.getElementById("icon");
+      icon.onclick = function(){
+        document.body.classList.toggle("dark-mode");
+        if(document.body.classList.contains("dark-mode"))
+        {
+          icon.textContent = "Light ☀";
+        }
+
+        else
+        {
+          icon.textContent = "Dark ☽"
+        }
+        }
+    </script>
+
   </body>
   <!-- JavaScript Files -->
   <script src="js/script.js"></script>
