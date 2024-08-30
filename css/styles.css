@@ -149,6 +149,24 @@ ul li ul.dropdown li:hover a {
   background-color: #c07c23;
 } */
 
+/* Light And Dark Mode */
+
+
+/* Default (Light Mode) */
+body {
+  background-color: white;
+  color: black
+}
+
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+
 
 .toggle-button {
   position: absolute;
