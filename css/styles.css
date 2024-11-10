@@ -215,7 +215,7 @@ header {
 
 .project-item a {
   color: white;
-  background: #0a253b;
+  background: #845210;
   text-decoration: none;
   padding: 7px;
   border-radius: 4px;
@@ -223,7 +223,7 @@ header {
 }
 
 .project-item a:hover {
-  background: rgba(10, 37, 59, 80%);
+  background: rgba(128, 91, 7, 0.8);
 }
 
 /* Education Styles */
