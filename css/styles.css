@@ -140,15 +140,16 @@ h5 {
   margin-top: 0.3rem;
   padding: 1.3rem;
   display: block;
+  transition: 0.5s;
 }
 
 /* Dropdown Menu */
 
-ul li ul.dropdown li {
+.navbar-links ul li ul.dropdown li {
   display: block;
 }
 
-ul li ul.dropdown {
+.navbar-links ul li ul.dropdown {
   width: 100%;
   background: #101010;
   color: var(--secondary-color);
@@ -157,16 +158,16 @@ ul li ul.dropdown {
   display: none;
 }
 
-ul li a:hover {
+.navbar-links li a:hover {
   background: #c07c23;
 }
 
-ul li:hover ul.dropdown {
+.navbar-links ul li:hover ul.dropdown {
   display: block;
 }
 
 
-ul li ul.dropdown li:hover a {
+.navbar-links ul li ul.dropdown li:hover a {
   background-color: #c07c23;
 } */
 
@@ -220,6 +221,7 @@ header {
   padding: 7px;
   border-radius: 4px;
   display: inline-block;
+  transition: 0.5s;
 }
 
 .project-item a:hover {
@@ -250,11 +252,12 @@ footer {
   color: white;
   padding: 15px;
   display: inline-block;
+  transition: 0.5s;
 }
 
-.contact-list a:hover {
+/* .contact-list a:hover {
   display: block;
-}
+} */
 
 .contact-list a:hover {
   color: #c07c23;
